@@ -383,10 +383,12 @@ class Application(tk.Frame):
           print(">>>图片文件导入完毕")
           
           count_chapter = 0
+          count_image = 1
           for filename in os.listdir(self.Images_dir):
-              if '00001' == filename[-9:-4] :
+              if '00001' == filename[-9:-4]:
                 count_chapter += 1
-              os.rename(self.Images_dir+filename,f'{self.Images_dir}{count_chapter:0>3d}{filename[-9:]}')
+              os.rename(self.Images_dir+filename,f'{self.Images_dir}{count_chapter:0>3d}{count_image:0>5d}{filename[-4:]}')
+              count_image += 1
         except BaseException as e:
           print(str(e))
           print("\n!!!请确保文件夹下只有图片文件!!!")
@@ -394,6 +396,7 @@ class Application(tk.Frame):
           return
             
         print(">>>图片文件重命名完毕")
+        # input("debug")
 
         self.createXHTML()
         print(">>>opf_ncx构建完毕")
