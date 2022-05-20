@@ -1,4 +1,5 @@
 ## 轻型epub制作脚本，仅支持图片打包 by Konoha
+（如果单纯只想打包图片，其实打包成PDF也是很不错的，足够简单足够稳定）[PDFMaker](https://github.com/KonohaVio/PDFMaker)
 
 ### 找到【##aLittleEpub.exe】，双击启动
 ### 推荐【##aLittleEpub.exe】右键生成快捷方式，把快捷方式放到你喜欢的地方
@@ -6,7 +7,7 @@
 ----源代码文件【##aLittleEpub_v1.01.py】可在python环境下运行，具体环境可见源代码文件开头部分。
 ----若要单独运行源文件，应将【configution】和【resources】这两个文件夹与源代码放在同一文件夹下，其他文件均可抛弃。
 
-##### 准备工作：将一本书的所有图片放在一个文件夹下，并保证顺序正确。
+##### 准备工作：将一本书的所有图片放在一个文件夹下，并保证顺序正确。(##rename.exe可以重命名图片以确保顺序)
 
 1. 选择目录，选择要打包的图片所在的文件夹，默认会将其所有文件一起打包，如果有非图片文件可能会导致出错。
 2. 书名必填，剩下作者，语言，日期，章节目录均为选填。章节不够可以增加，但有上限。
@@ -16,21 +17,20 @@
 #### 一些注意事项：
 
 ##### 最好不要放C盘
-
 ##### 暂不支持jpg和png以外的图片格式
-
 ##### 选择的图片文件夹内尽量都是待打包的图片
-
 ##### iPad推荐阅读器KyBook3（免费版）
-
 ##### 竖屏滚动推荐使用eBoox
-
 ##### 可以尝试更多的阅读器，以满足你的阅读习惯。
-
 ##### 软件或许仍有诸多bug，可以的话请联系我
 
 ##### py源代码环境：python 3.7.0--3.9.0   &&   pip3 install Pillow 9.0.0
 ##### 源代码的运行只需要同目录下有configuration和resources这两个文件夹即可
+
+### ##rename.exe效果如下
+![image](https://user-images.githubusercontent.com/61352919/169463734-5dc247ae-94ef-4a16-b33d-64d8bd8583a7.png)
+![image](https://user-images.githubusercontent.com/61352919/169463742-880cf668-e2c9-400e-af94-46e07c75a0a5.png)
+
 
 ### 制作的书籍经Calibre等专业ePub软件检测合格
 ![image](https://user-images.githubusercontent.com/61352919/152534630-fd571b11-eb4a-4047-a5f0-19f1427bbd37.png)
