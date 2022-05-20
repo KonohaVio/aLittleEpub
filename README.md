@@ -28,8 +28,7 @@
 ##### 源代码的运行只需要同目录下有configuration和resources这两个文件夹即可
 
 ### ##rename.exe效果如下
-![image](https://user-images.githubusercontent.com/61352919/169463734-5dc247ae-94ef-4a16-b33d-64d8bd8583a7.png)
-![image](https://user-images.githubusercontent.com/61352919/169463742-880cf668-e2c9-400e-af94-46e07c75a0a5.png)
+![image](https://user-images.githubusercontent.com/61352919/169464274-6d22eb43-a411-4c81-9c35-067863ddfd12.png)
 
 
 ### 制作的书籍经Calibre等专业ePub软件检测合格
